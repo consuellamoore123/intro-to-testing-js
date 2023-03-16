@@ -14,19 +14,84 @@ describe('helloWorld', function() {
     });
 });
 
+
+//New test for sayHello function
+
+
+
+
 //Unit test for sayHello function
 describe('sayHello', function() {
     it('should be a defined function', function() {
         expect(typeof sayHello).toBe('function');
-    });
+});
     it('should return a string when called', function() {
-        expect(typeof sayHello()).toBe('string');
+        expect(typeof sayHello()).toBe("string");
 });
-    it("should return the string 'Hello Connie' when executed", function() {
-        expect(sayHello()).toBe('Hello, Connie');
+        it("should never return 'undefined' when called", function() {
+            expect(typeof sayHello()).not.toBe(undefined);
 });
-    it("should never return 'undefined' when called", function() {
-        expect(typeof sayHello()).not.toBe(undefined);
+    it('should return the string "Hello, Jane" when executed', function() {
+        expect(sayHello ("Jane")).toBe("Hello, Jane");
+});
+    it('should return the string "Hello, Alex" when executed', function() {
+        expect(sayHello ("Alex")).toBe("Hello, Alex");
+    });
+    it('should return the string "Hello, Pat" when executed', function() {
+        expect(sayHello ("Pat")).toBe("Hello, Pat");
     });
 });
 
+//New test for sayHello function
+
+// //Unit test for sayHello function
+// describe('sayHello', function() {
+//     it('should be a defined function', function() {
+//         expect(typeof sayHello).toBe('function');
+//     });
+//     it('should return a string when called', function() {
+//         expect(typeof sayHello()).toBe('string');
+//     });
+//     it("should return the string '' when executed", function() {
+//         expect(sayHello()).toBe('');
+//     });
+//     it("should never return 'undefined' when called", function() {
+//         expect(typeof sayHello()).not.toBe(undefined);
+//     });
+// });
+//
+// //Unit Test for SayHello(name) function
+//
+// describe('sayHello', function() {
+//     it('should be a defined function', function() {
+//         expect(typeof sayHello).toBe('function');
+//     });
+//     it('should return a string when called', function() {
+//         expect(typeof sayHello()).toBe('string');
+//     });
+//     it("should return the string 'Hello, Jane' when executed", function() {
+//         expect(sayHello('Jane')).toBe('Hello, Jane');
+//     });
+//     it("should never return 'undefined' when called", function() {
+//         expect(typeof sayHello(name)).not.toBe(undefined);
+//     });
+// });
+
+//Say helloAlex function
+
+// describe('sayHello', function() {
+//     it('should be a defined function', function() {
+//         expect(typeof sayHello).toBe('function');
+//     });
+//     it('should return a string when called', function() {
+//         expect(typeof sayHello()).toBe('string');
+//     });
+//     it("should return the string '' when executed", function() {
+//         expect(sayHelloAlex('Alex')).toBe('Alex');
+//     });
+//     it("should never return 'undefined' when called", function() {
+//         expect(typeof sayHello3('Alex')).not.toBe(undefined);
+//     });
+// });
+//
+//
