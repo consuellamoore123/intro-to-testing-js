@@ -11,7 +11,7 @@ function sayHello(name) {
     } else if (name === "Pat") {
         return "Hello, Pat"
     } else{
-        return "Hello"
+        return ("Hello," + name + "!");
     }
 }
 
