@@ -39,13 +39,25 @@ function isEven(number) {
         return false
     }
 }
-
+//isVowel function
 var vowelList = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 const isVowel = function(x) {
         if (vowelList.includes(x)) {
         return true;
     } else {
         return false;
+    }
+}
+
+//add function
+function add (num1, num2) {
+    if(num1 && num2 === String) {
+        return NaN
+    }
+    if(isNaN(num1) || isNaN(num2)) {
+        return NaN
+    } else {
+        return num1 + num2
     }
 }
 
