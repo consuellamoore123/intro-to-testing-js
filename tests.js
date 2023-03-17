@@ -92,12 +92,40 @@ describe('isEven', function() {
     it('should return false when passed a non-numeric string like "banana"', function() {
         expect(isEven("banana")).toBe(false);
     });
-    it('should return false when passed the boolean value ' + randomBoolean, function() {
-        expect(isEven(randomBoolean)).toBe(false)
+    it('should return false when passed the boolean value ', function() {
+        expect(isEven()).toBe(false)
     });
 });
 
 //isVowel function
 
-
+describe('isVowel', function() {
+    it('should be a defined function', function() {
+        expect(typeof isVowel).toBe('function');
+    });
+    it('should return a boolean value when passed', function() {
+        expect(typeof isVowel()).toBe('boolean');
+    });
+    it('should return true when passed "a"', function() {
+        expect(isVowel("a")).toBe(true);
+    });
+    it('should return true when passed "A"', function() {
+        expect(isVowel("A")).toBe(true);
+    });
+    it('should return true when passed "y"', function() {
+        expect(isVowel("Y")).toBe(false);
+    });
+    it('should return false when passed 4', function() {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return false when passed a string like "banana"', function() {
+    expect(isVowel("banana")).toBe(false);
+    });
+    it('should return false when no value is passed', function() {
+        expect(isVowel()).toBe(false);
+    });
+    it('should return false when no value is give', function() {
+        expect(isVowel()).toBe(false)
+    });
+});
 

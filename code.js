@@ -40,3 +40,12 @@ function isEven(number) {
     }
 }
 
+var vowelList = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+const isVowel = function(x) {
+        if (vowelList.includes(x)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
