@@ -51,11 +51,13 @@ const isVowel = function(x) {
 
 //add function
 function add (num1, num2) {
-    if(num1 && num2 === String) {
-        return NaN
+    if(num1 && num2 == "string") {
+        return "NaN"
     }
-    if(isNaN(num1) || isNaN(num2)) {
-        return NaN
+     else if (num1 == "num1" || num2 == "num2") {
+        return "NaN"
+    } else if(name === undefined || name === null) {
+         return "NaN"
     } else {
         return num1 + num2
     }

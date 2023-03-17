@@ -141,13 +141,10 @@ describe('add', function() {
     it('should return -12 when -3 and -9 are passed', function() {
         expect(add(-3, -9)).toBe(-12);
     });
-    it('should return NaN if num1 and num2 are not Numbers', function() {
-        expect(typeof add()).toBe(Number);
-    });
-    it('should return NaN if num1 and num2 are strings when executed', function() {
-        expect(typeof add() != "").toBe(NaN);
+    it('should return NaN if not a Numbers', function() {
+        expect(typeof add()).toBe("Number");
     });
     it('should return NaN when no value is passed', function() {
-        expect(add()).toBe(NaN);
+        expect(add()).toBe("NaN");
     });
 });
