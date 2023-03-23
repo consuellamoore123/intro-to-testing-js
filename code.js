@@ -50,16 +50,12 @@ const isVowel = function(x) {
 }
 
 //add function
+
 function add (num1, num2) {
-    if(num1 && num2 == "string") {
-        return "NaN"
-    }
-     else if (num1 == "num1" || num2 == "num2") {
-        return "NaN"
-    } else if(name === undefined || name === null) {
-         return "NaN"
-    } else {
+    if (typeof num1 === "number" && typeof num2 === "number") {
         return num1 + num2
+    } else {
+        return NaN
     }
 }
 
